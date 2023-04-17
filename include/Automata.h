@@ -9,9 +9,7 @@
 enum STATES { OFF, WAIT, ACCEPT, CHECK, COOK };
 
 class Automata {
-
-private:
-
+  private:
   double cash;
   std::vector<std::string> menu;
   std::vector<double> price;
@@ -19,8 +17,7 @@ private:
   void cook();
   void finish();
 
-public:
-
+  public:
   Automata();
   void on();
   void off();
@@ -31,5 +28,4 @@ public:
   void check(int);
   void cancel();
 };
-
-#endif  // INCLUDE_AUTOMATA_H_"  
+#endif // INCLUDE_AUTOMATA_H_"
