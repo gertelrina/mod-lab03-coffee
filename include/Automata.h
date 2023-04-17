@@ -1,3 +1,4 @@
+// Copyright 2022 GHA Test Team
 #ifndef INCLUDE_AUTOMATA_H_
 #define INCLUDE_AUTOMATA_H_
 
@@ -8,7 +9,9 @@
 enum STATES { OFF, WAIT, ACCEPT, CHECK, COOK };
 
 class Automata {
+
 private:
+
   double cash;
   std::vector<std::string> menu;
   std::vector<double> price;
@@ -17,6 +20,7 @@ private:
   void finish();
 
 public:
+
   Automata();
   void on();
   void off();
@@ -28,4 +32,4 @@ public:
   void cancel();
 };
 
-#endif
+#endif  // INCLUDE_AUTOMATA_H_"  
